@@ -50,7 +50,7 @@ export class SampleIframe extends LitElement {
     static properties = {
         name: 'Hello',
         title: 'Hello',
-        src: 'https://www.wikipedia.org/',
+        src: 'https://stevebarnard98045.github.io/HelloWorld/tokenizer.html',
         height: '100%'
     }
 
@@ -59,15 +59,14 @@ export class SampleIframe extends LitElement {
         let styles = {height: this.height};
 
         return html`
-            <body>
-                <form action="/submit_form" method="post">
-                    <label for="fname">First Name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last Name:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </body>`;
+            <iframe
+                    class="frame"
+                    style=${styleMap(styles)}
+                    name=${this.name}
+                    allow="geolocation *; microphone; camera"
+                    title=${this.title}
+                    src=${this.src}
+            ></iframe>`;
     }
 
 }
