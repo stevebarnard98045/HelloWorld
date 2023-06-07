@@ -196,5 +196,5 @@ export class EmbeddedAssureSign extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'StevesAssuresign';
+const elementName = 'embedded-assuresign';
 customElements.define(elementName, EmbeddedAssureSign);
