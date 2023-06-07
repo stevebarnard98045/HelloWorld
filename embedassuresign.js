@@ -34,7 +34,7 @@ export class EmbeddedAssureSign extends LitElement {
     static getMetaConfig() {
         // plugin contract information
         return {
-            controlName: 'ProServ-Embedded-Assuresign',
+            controlName: 'Embedded-AssureSign',
             fallbackDisableSubmit: false,
             description: 'IFrame component which can render AssureSign envelope',
             iconUrl: "pen",
@@ -196,5 +196,5 @@ export class EmbeddedAssureSign extends LitElement {
 }
 
 // registering the web component.
-const elementName = 'ProServ-Embedded-Assuresign';
+const elementName = 'Embedded-AssureSign';
 customElements.define(elementName, EmbeddedAssureSign);
